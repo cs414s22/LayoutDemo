@@ -22,12 +22,13 @@ class MainActivity : AppCompatActivity() {
         // Hide the keyboard
         lucky_number.hideKeyboard()
 
-        // Finally display the information
-        result.text = "Hello $name, your lucky number is $luckyNumber"
-
         // Clear the EditTexts
         person_name.text.clear()
         lucky_number.text.clear()
+
+        // Finally display the information
+        result.text = "Hello $name, your lucky number is $luckyNumber"
+        
     }
 
     private fun View.hideKeyboard() {
